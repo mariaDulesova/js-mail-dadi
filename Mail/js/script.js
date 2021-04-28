@@ -7,7 +7,6 @@ var authorisedMailList = ["antonio.banderas@hotmail.com", "javier.bardem@gmail.c
 
 var userMail = prompt("Please write your email:");
 
-var meassage
 
 for (i=0; i< authorisedMailList.length; i++) {
     if (userMail == authorisedMailList[i]) {
@@ -20,6 +19,8 @@ for (i=0; i< authorisedMailList.length; i++) {
         document.getElementById("result").innerHTML = message;
     }
 }
+
+console.log(message);
 
 
 
