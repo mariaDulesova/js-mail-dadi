@@ -7,12 +7,23 @@ var authorisedMailList = ["antonio.banderas@hotmail.com", "javier.bardem@gmail.c
 
 var userMail = prompt("Please write your email:");
 
+var meassage
 
 for (i=0; i< authorisedMailList.length; i++) {
     if (userMail == authorisedMailList[i]) {
-        console.log ("Congratulations, you are on the list!")
-    } 
+        // console.log ("Congratulations, you are on the list!")
+        var message = "Congratulations, you are on the list!";
+        document.getElementById("result").innerHTML = message;
+    } else {
+        // console.log ("Unfortunately, you are not on the list!")
+        var message = "Unfortunately, you are not on the list!";
+        document.getElementById("result").innerHTML = message;
+    }
 }
+
+
+
+
 
 
 
