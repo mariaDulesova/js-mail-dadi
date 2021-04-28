@@ -15,12 +15,12 @@ var authorisedMail = false; //di default la mail non e' autorizzata
 
 for (i = 0; i < authorisedMailList.length; i++) {
     if (userMail == authorisedMailList[i]) {
-        message = true; //se trovo la corrispondenza, la mail e' autorizzata
+        authorisedMail = true; //se trovo la corrispondenza, la mail e' autorizzata
     }
 }
 
 //Stampo il messaggio a seconda del esito
-if (message == true) {
+if (authorisedMail == true) {
     document.getElementById("result").innerHTML = "Congratulations, you are on the list!";
 } else {
     document.getElementById("result").innerHTML = "Unfortunately, you are not on the list";
