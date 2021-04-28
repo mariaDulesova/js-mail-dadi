@@ -8,7 +8,7 @@ var authorisedMailList = ["antonio.banderas@hotmail.com", "javier.bardem@gmail.c
 var userMail = prompt("Please write your email:");
 
 
-for (i=0; i< authorisedMailList.length; i++) {
+for (i = 0; i < authorisedMailList.length; i++) {
     if (userMail == authorisedMailList[i]) {
         // console.log ("Congratulations, you are on the list!")
         var message = "Congratulations, you are on the list!";
